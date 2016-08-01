@@ -1,13 +1,9 @@
-require "open-uri"
-require 'open_uri_redirections'
-require 'oauth'
-
 require 'rubygems'
 require 'json'
 
 
 
-tweet_filename = 'USAGov-tweets-page-2.json'
+tweet_filename = 'filename'
 tweets_file = File.open(tweet_filename)
 parsed_json= JSON.parse(tweets_file.read)
 tweets_file.close
